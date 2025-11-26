@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Celular - Temario</title>
+    <!-- Carga de Tailwind CSS para el estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuración de Tailwind para usar un esquema de color oscuro y cómodo
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-primary': '#1A202C', // Gris oscuro casi negro
+                        'dark-secondary': '#2D3748', // Gris azulado oscuro
+                        'dark-text': '#E2E8F0', // Texto gris claro
+                        'accent-red': '#E53E3E', // Rojo suave
+                        'accent-green': '#38A169', // Verde suave
+                        'accent-blue': '#4299E1', // Azul medio
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilo base para el cuerpo, usando la configuración oscura */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1A202C; /* dark-primary */
+            color: #E2E8F0; /* dark-text */
+            line-height: 1.6;
+        }
+        /* Estilos para el título principal */
+        .header-title {
+            border-bottom: 4px solid #4299E1; /* accent-blue */
+        }
+        /* Estilo para los títulos de sección (h2) */
+        .section-title {
+            color: #4299E1; /* accent-blue */
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2D3748; /* dark-secondary */
+        }
+        /* Estilo para los recuadros de conceptos/fórmulas (simulando rojo/verde) */
+        .concept-box {
+            background-color: #2D3748; /* dark-secondary */
+            border-left-width: 4px;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 20px;
+        }
+        .red-concept {
+            border-left-color: #E53E3E; /* accent-red */
+        }
+        .green-concept {
+            border-left-color: #38A169; /* accent-green */
+        }
+        /* Estilo para las fórmulas (ahora usando texto plano y destacando) */
+        .formula {
+            display: block; /* Convertimos en bloque para mayor claridad */
+            background-color: #1A202C; /* dark-primary */
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.1em;
+            color: #FFC43A; /* Color para destacar */
+            margin-top: 8px;
+            overflow-x: auto; /* Para manejar fórmulas largas */
+        }
+        /* Estilo para listas y párrafos generales */
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="max-w-4xl mx-auto p-6 lg:p-10">
+
+        <!-- Título Principal -->
+        <header class="mb-10">
+            <h1 class="header-title text-4xl lg:text-5xl font-extrabold pb-3 mb-2 text-dark-text tracking-tight">
+                ORGANIZACIÓN CELULAR DE LOS SERES VIVOS
+            </h1>
+            <!-- Se eliminó el subtítulo de Bachillerato a petición del usuario -->
+        </header>
+
+        <!-- Sección: La Teoría Celular -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">1. La Teoría Celular</h2>
+
+            <p class="mb-4">
+                Establecida por Matthias Schleiden y Theodor Schwann en el siglo XIX, y complementada posteriormente, esta teoría es el fundamento de la Biología moderna.
+            </p>
+
+            <div class="concept-box red-concept">
+                <h3 class="text-xl font-bold mb-2 text-accent-red">Postulados Fundamentales</h3>
+                <ul class="space-y-2 text-dark-text">
+                    <li><strong>Unidad Estructural:</strong> Todos los seres vivos están formados por una o más células.</li>
+                    <li><strong>Unidad Funcional:</strong> La célula es la unidad mínima capaz de llevar a cabo las funciones vitales básicas (nutrición, relación, reproducción).</li>
+                    <li>
+                        <strong>Unidad Reproductora:</strong> Toda célula proviene de otra existente (Postulado de Virchow).
+                        <p class="text-sm mt-1">Fórmula (Latín): <span class="formula">Omnis cellula ex cellula</span></p>
+                    </li>
+                    <li><strong>Unidad Genética:</strong> El material hereditario (ADN) pasa de la célula madre a las células hijas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Estructura de la Célula -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">2. La Estructura Básica de la Célula</h2>
+
+            <p class="mb-4">Toda célula, independientemente de su tipo, posee una estructura común compuesta por cuatro elementos clave:</p>
+
+            <div class="concept-box green-concept">
+                <h3 class="text-xl font-bold mb-2 text-accent-green">Componentes Universales</h3>
+                <ul class="space-y-3 text-dark-text">
+                    <li>
+                        <strong>Membrana Plasmática:</strong> Una membrana que separa el medio interno del externo. Regula el intercambio de materia.
+                        <p class="text-sm mt-1">Función: Mantenimiento de la homeostasis y permeabilidad selectiva.</p>
+                    </li>
+                    <li>
+                        <strong>Citoplasma:</strong> Solución acuosa (citosol) donde se llevan a cabo las reacciones metabólicas.
+                        <p class="text-sm mt-1">Composición: Agua, sales minerales, proteínas, carbohidratos, lípidos.</p>
+                    </li>
+                    <li>
+                        <strong>Material Genético (ADN):</strong> Contiene la información que controla el funcionamiento celular y se transmite a la descendencia.
+                        <p class="text-sm mt-1">Fórmula del Flujo de la Información Genética (Dogma Central de la Biología Molecular):</p>
+                        <span class="formula">
+                            ADN → (por Transcripción) → ARN → (por Traducción) → Proteínas
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Orgánulos Celulares:</strong> Estructuras subcelulares que desempeñan funciones específicas dentro de la célula. (Los ribosomas son los orgánulos universales).
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Tipos de Células -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">3. Células Procariotas y Eucariotas</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Célula Procariota -->
+                <div class="concept-box red-concept">
+                    <h3 class="text-2xl font-bold mb-3 text-accent-red">Célula Procariota (Ej. Bacterias)</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Núcleo:</strong> Ausente. El ADN está libre en el citoplasma (nucleoide).</li>
+                        <li><strong>ADN:</strong> Generalmente circular y una sola molécula.</li>
+                        <li><strong>Orgánulos:</strong> Solo posee ribosomas (más pequeños que en eucariotas).</li>
+                        <li><strong>Tamaño Típico:</strong> 1-10 $\mu$m (micrómetros).</li>
+                        <li><strong>Estructuras Adicionales Comunes:</strong> Pared celular, cápsula, flagelos, fimbrias.</li>
+                    </ul>
+                </div>
+
+                <!-- Célula Eucariota -->
+                <div class="concept-box green-concept">
+                    <h3 class="text-2xl font-bold mb-3 text-accent-green">Célula Eucariota (Ej. Animales, Plantas)</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Núcleo:</strong> Presente. El ADN está envuelto por la membrana nuclear.</li>
+                        <li><strong>ADN:</strong> Lineal, asociado a proteínas (histonas) formando cromosomas.</li>
+                        <li><strong>Orgánulos:</strong> Posee ribosomas y un complejo sistema de orgánulos membranosos (mitocondrias, RE, Golgi, etc.).</li>
+                        <li><strong>Tamaño Típico:</strong> 10-100 $\mu$m (micrómetros).</li>
+                        <li><strong>División Celular:</strong> Mitosis y meiosis.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: El Núcleo Celular -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">4. El Núcleo Celular</h2>
+
+            <p class="mb-4">Es el centro de control de la célula eucariota, donde se almacena y replica el material genético.</p>
+
+            <div class="concept-box green-concept">
+                <h3 class="text-xl font-bold mb-2 text-accent-green">Estructuras del Núcleo</h3>
+                <ul class="space-y-2">
+                    <li><strong>Envoltura Nuclear:</strong> Doble membrana que separa el nucleoplasma del citoplasma. Posee poros nucleares.</li>
+                    <li><strong>Nucleoplasma (Carioplasma):</strong> Solución acuosa interna.</li>
+                    <li><strong>Cromatina:</strong> ADN asociado a proteínas histonas en estado laxo. Se condensa en cromosomas.</li>
+                    <li><strong>Nucléolo:</strong> Estructura densa donde se sintetiza el ARN ribosómico (ARNr) y se ensamblan los ribosomas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Los Orgánulos Celulares (Breve Resumen) -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">5. Orgánulos de la Célula Eucariota</h2>
+
+            <p class="mb-4">Funciones clave de los orgánulos membranosos y no membranosos:</p>
+
+            <div class="concept-box red-concept">
+                <h3 class="text-xl font-bold mb-2 text-accent-red">Ejemplos de Orgánulos</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <strong>Ribosomas:</strong> No membranosos. Síntesis de proteínas (traducción).
+                        <p class="text-sm mt-1">Proceso de síntesis: <span class="formula">ARN mensajero + ARN de transferencia + Aminoácidos → Proteína</span></p>
+                    </li>
+                    <li>
+                        <strong>Retículo Endoplasmático (RE):</strong> Red de membranas. RE Rugoso (RER): Síntesis de proteínas de membrana y secreción. RE Liso (REL): Síntesis de lípidos (esteroides), detoxificación.
+                    </li>
+                    <li>
+                        <strong>Aparato de Golgi:</strong> Modificación, clasificación, y empaquetamiento de proteínas y lípidos para su secreción o destino final.
+                    </li>
+                    <li>
+                        <strong>Mitocondrias:</strong> Respiración celular y producción de ATP.
+                        <p class="text-sm mt-1">Fórmula simplificada de la Respiración Celular:</p>
+                        <span class="formula">
+                            Glucosa + Oxígeno → Dióxido de Carbono + Agua + Energía (ATP)
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Cloroplastos (Solo en Vegetal):</strong> Fotosíntesis.
+                        <p class="text-sm mt-1">Fórmula simplificada de la Fotosíntesis:</p>
+                        <span class="formula">
+                            Dióxido de Carbono + Agua + Energía lumínica → Glucosa + Oxígeno
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Virus -->
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-6">6. ¿Son los Virus Células?</h2>
+
+            <p class="mb-4">Los virus se encuentran en el límite de la vida. Carecen de maquinaria metabólica propia.</p>
+
+            <div class="concept-box green-concept">
+                <h3 class="text-xl font-bold mb-2 text-accent-green">Características Virales</h3>
+                <ul class="space-y-2">
+                    <li><strong>Tamaño:</strong> Mucho más pequeños que las bacterias.</li>
+                    <li><strong>Composición:</strong>
+                        <ul class="list-disc ml-6 mt-1">
+                            <li>Ácido Nucleico (Genoma): ADN o ARN.</li>
+                            <li>Cápsida: Cubierta de proteínas que rodea al ácido nucleico.</li>
+                            <li>Envoltura (Opcional): Parecida a la membrana plasmática.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Metabolismo:</strong> Carecen de estructuras para poseer un metabolismo propio.</li>
+                    <li><strong>Reproducción:</strong> Su información genética debe introducirse en una célula huésped para expresarse y replicarse.</li>
+                    <li><strong>Definición:</strong> Son <strong>parásitos obligados</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pie de Página -->
+        <footer class="mt-12 pt-6 border-t border-dark-secondary text-center text-sm text-gray-500">
+            <p>Temario generado con base en el documento adjunto. Estilo visual optimizado para la lectura.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
